@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap');
+
+
+/*
+ * Globals
+ */
+
+img {
+  max-width: 100%;
+}
+
+
+ul {
+  padding: 0px;
+}
+
+
+.social-list li {
+
+  list-style: none;
+}
+
+.social-list li a {
+  color: #5CC4C4;
+}
+
+
+
+/* Links */
+
+.visibleBorderLeftRight {
+  display: inline-block;
+  color: #ffffff;
+  position: relative;
+}
+
+.visibleBorderLeftRight::after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(1);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: #5CC4C4;
+   transform-origin: bottom left;
+   transition: transform .3s ease-in-out;
+}
+
+.visibleBorderLeftRight:hover::after {
+   transform: scaleX(0);
+   transform-origin: bottom right;
+}
+
+
+/*
+ * Base structure
+ */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+  height: 100%;
+}
+
+body {
+  background-color: #202833;
+  color: #ffffff;
+}
+
+section {
+  min-height: 90%;
+  display: flex;
+  align-items: center;
+}
+
+
+/* 
+   Header
+*/
+
+.header {
+  background-color: #202833;
+  box-shadow: 0px 1px 6px #2A3443;
+}
+
+
+.navbar-toggler {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.navbar-brand:hover {
+  color: #ffffff;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #5CC4C4;
+}
+
+/* 
+   Intro
+*/
+
+.intro-developer-area,
+.intro-button {
+  color: #5CC4C4;
+}
+
+.intro-button {
+  border: 1px solid #5CC4C4;
+}
+
+.intro-button:hover {
+  color: #ffffff;
+  background-color: #5CC4C4;
+}
+
+.intro__img-content,
+.intro__text-content {
+  margin: 2rem 0;
+}
+
+.intro__img-content {
+  text-align: center;
+}
+
+.intro__img {
+  max-width: 80%;
+}
+
+.intro-developer-area {
+  font-style: italic;
+}
+
+.intro-title {
+  font-weight: 700;
+}
+
+.intro-description {
+  font-size: 1.1rem;
+}
+
+.intro-button {
+  font-weight: 500;
+}
+
+/* 
+   About
+*/
+
+
+.about {
+  background-color: #2A3443;
+}
+
+.about .social-list li {
+  display: inline;
+  font-size: 2rem;
+  margin: 0px 10px;
+}
+
+
+
+/* 
+   Stack
+*/
+.logo__wrapper {
+  /* background-color: #ffffff; */
+  text-align: center;
+  border-radius: 8px;
+  background: #d2d3d4;
+  box-shadow:  7px -7px 14px #202833,
+               -7px 7px 14px #202833;
+  /* width: 100px;
+  height: 150px; */
+}
+
+  .logo__container {
+    /* background-color: #ffffff; */
+    position: relative;
+    display: flex;
+    height: 70px;
+    border-bottom: 1px solid #2A3443;
+    justify-content: center;
+  }
+
+    .logo__img {
+      width: 80%;
+      padding: 10px 0px;
+    }
+
+    .logo__name {
+      color: #333;
+    }
+
+/* 
+   Projetos
+*/
+
+.projetos .card-text {
+  color: #696969;
+}
+
+/* 
+   Contato
+*/
+
+
+.contato .social-list li {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+
+
+/* 
+   Footer
+*/
+
+footer {
+  background-color: rgb(20, 20, 20);
+  border-bottom: 4px solid #5CC4C4;
+}
+
+  footer p {
+    margin: 0;
+    color: #696969;
+  }
+
