@@ -205,8 +205,23 @@ section {
    Projetos
 */
 
+.card {
+  min-height: 100%;
+}
+
 .projetos .card-text {
   color: #696969;
+  padding-bottom: 30px;
+}
+
+.card-body {
+  position: relative;
+}
+
+.btn-content {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0;
 }
 
 /* 
